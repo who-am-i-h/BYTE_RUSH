@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello, World!</title>
+
+  <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+  <script type="text/javascript" src="/eel.js"></script>
+  <!-- <script type="text/javascript">
+    eel.expose(get_frame);
+    function get_frame(frame_data) {
+      const img = document.getElementById('video');
+      img.src = "data:image/jpeg;base64," + frame_data;
+    } -->
+  <!-- </script> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Live Camera Stream</h1>
+  <div class="container" id="user">
+    <!-- <button id="voiceCommandBtn">Start Voice Command</button> -->
+  </div>
+  <!-- for animation -->
+  <div class="containe">
+    <div class="circle">
+    </div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <!-- end animation -->
+  <div id="response" style="margin-top: 20px; border: 1px solid #000; padding: 10px;">
+    <!-- AI response will be displayed here -->
+  </div>
+  <script src="index.js"></script>
+  <script>
+    function sendCommand() {
+      const command = document.getElementById("userInput").value;
+      eel.process_command(command)(updateResponse);
+    }
+
+    function updateResponse(response) {
+      document.getElementById("response").innerHTML = response;
+    }
+
+  </script>
+</body>
+
+</html>
