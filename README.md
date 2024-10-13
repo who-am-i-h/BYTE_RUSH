@@ -37,7 +37,6 @@ It uses various technologies to analyze the image like PILLOW python and use GEN
    ```bash
    git clone https://github.com/who-am-i-h/BYTE_RUSH.git
    cd BYTE_RUSH
-
-  ##Description
-  this is a very complicated project which uses ai and image processing to gove prompt and this project also uses various new technologies like GEN-AI and 
+## Description
+this is a very complicated project which uses ai and image processing to gove prompt and this project also uses various new technologies like GEN-AI and 
 Python EEL for configuring.
