@@ -52,7 +52,7 @@ def process_command(command: str):
     return "Failed to capture frame."
 
 def process_frame_with_gemini(frame, data:str):
-    if data.lower().startswith("Avish"):
+    if data.lower().startswith("okay ai") or data.lower().startswith("ok ai"):
         cv2.imwrite("sample.jpg", frame)
         img = Image.open("sample.jpg")
         response = model.generate_content([img, data])
