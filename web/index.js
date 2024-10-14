@@ -20,7 +20,7 @@ if (SpeechRecognition) {
         // Send recognized command to Python Eel
         eel.process_command(transcript)(function(response) {
             responseDiv.innerHTML += `<br>Response from AI: ${response}`;
-            // Restart recognition after AI response
+            // Restart recognition after ai response
             recognition.start();
         });
     };
@@ -36,10 +36,10 @@ if (SpeechRecognition) {
         recognition.start(); 
     };
 
-    stopButton.addEventListener('click', () => {
-        recognition.stop();
-        responseDiv.innerHTML += '<br>Listening stopped.';
-    });
+    // stopButton.addEventListener('click', () => {
+    //     recognition.stop();
+    //     responseDiv.innerHTML += '<br>Listening stopped.';
+    // });
 } else {
     console.error('Speech recognition not supported in this browser.');
 }
