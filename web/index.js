@@ -7,7 +7,7 @@ if (SpeechRecognition) {
     recognition.lang = 'en-US';
 
     const responseDiv = document.getElementById('response');
-    const stopButton = document.getElementById('stopButton');
+    // const stopButton = document.getElementById('stopButton');
 
     // Start recognition automatically
     recognition.start();
