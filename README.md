@@ -12,6 +12,7 @@ It uses various technologies to analyze the image like PILLOW python and use GEN
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Description](#description)
+6. [Video](video)
 
 
 ## Features
@@ -40,3 +41,6 @@ It uses various technologies to analyze the image like PILLOW python and use GEN
 ## Description
 this is a very complicated project which uses ai and image processing to gove prompt and this project also uses various new technologies like GEN-AI and 
 Python EEL for configuring.
+
+## Video
+Link: https://youtu.be/F9u-mRRT-tM
