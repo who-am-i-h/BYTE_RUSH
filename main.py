@@ -20,7 +20,7 @@ def get_video_frame():
     if not ret:
         return None
     return frame
-
+#*****************.............. TRY TO ADD A NEW FEATURE MAY BE UPDATE LATER.........*********
 # @eel.expose
 # def get_frame():
 #     frame = get_video_frame()
@@ -52,7 +52,7 @@ def process_command(command: str):
     return "Failed to capture frame."
 
 def process_frame_with_gemini(frame, data:str):
-    if data.lower().startswith("okay ai") or data.lower().startswith("ok ai"):
+    if data.lower().startswith("ai") or data.lower().startswith("ok"):
         cv2.imwrite("sample.jpg", frame)
         img = Image.open("sample.jpg")
         response = model.generate_content([img, data])
